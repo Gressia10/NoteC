@@ -1,0 +1,31 @@
+<ion-header> 
+    <ion-navbar color="primary">
+      <ion-title>Note Add</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding="true" class="has-header">
+  <ion-list>
+      
+    <ion-item>
+      <ion-label floating>title</ion-label>
+      <ion-input type="text" [(ngModel)]="title"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Content</ion-label>
+      <ion-input type="text" [(ngModel)]="content"></ion-input>
+    </ion-item>
+      
+  </ion-list>
+  <button ion-button block (click)="addNote()">Save</button>
+  
+  <!--<div id="note-button-bar3" class="button-bar">
+    <button id="note-button16" class="button button-positive button-block icon ion-android-archive"></button>
+    <button id="note-button18" class="button button-positive button-block icon ion-android-cancel"></button>
+  </div>
+  <form id="note-form3" class="list">
+    <label class="item item-input" id="note-textarea1">
+      <span class="input-label">Text</span><textarea placeholder=""></textarea></label>
+  </form>-->
+</ion-content>

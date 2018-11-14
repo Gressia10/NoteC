@@ -1,14 +1,24 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+<ion-header >
+  <ion-navbar color="dark">
+    <ion-title>Login</ion-title>
+  </ion-navbar> 
 </ion-header>
-
+    
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div style="width: 400px; height: 400px; position: relative; ">
+    <ion-img src="../../assets/imgs/NoteC.png" style="width: 50%; height: 50%; position: relative; left:15%"></ion-img>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" value="" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <button ion-button  color="dark" (click)="login()" style="position: relative; top:10px; left:100px ">Log In</button>
+    <button ion-button color="light" (click)="goToSignup()" style="position: relative; top:70px; left:12px ">Sign up</button>
+  </div>
 </ion-content>
+
+
